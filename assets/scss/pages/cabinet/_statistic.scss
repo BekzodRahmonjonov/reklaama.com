@@ -1,0 +1,51 @@
+.statistics {
+  &-main {
+    max-width: 900px;
+    &-card {
+      border: 3px solid $secondary-color;
+      border-radius: 12px;
+      padding: 24px;
+      &-header {
+        @include d-flex(flex-start);
+        margin-bottom: 12px;
+        .svg svg {
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+        }
+        small {
+          @include text(500, 16px, 28px, $text-muted-color);
+        }
+      }
+      &-item {
+        @include d-flex(space-between);
+        padding: 8px 0;
+        border-bottom: 3px solid $secondary-color;
+        button {
+          &,
+          &:hover {
+            background: none;
+            padding: 0;
+            margin: 0;
+            height: auto;
+            @include text(500, 16px, 28px, #5594f3);
+            text-decoration-line: underline;
+            span {
+              color: #5594f3;
+            }
+          }
+        }
+        span {
+          @include text(500, 16px, 28px, $text-secondary-color);
+        }
+      }
+    }
+
+    @include devices(xl){
+        margin-left: 60px;
+    }
+    @include devices(sm){
+        margin-left: 0;
+    }
+  }
+}

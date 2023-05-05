@@ -1,0 +1,122 @@
+.footer {
+  background: $primary-color;
+  padding-top: 50px;
+  &-top {
+    &-wrapper {
+      @include d-flex(space-between);
+      align-items: flex-start;
+      margin-bottom: 36px;
+      .svg.logo {
+        justify-content: flex-start;
+        margin-bottom: 24px;
+        svg {
+          width: 170px;
+          max-height: 56px;
+          path {
+            fill: $white;
+          }
+        }
+      }
+      ul {
+        @include d-flex(center);
+        align-items: flex-start;
+        li {
+          margin-left: 85px;
+          h3 {
+            @include text(700, 24px, 32px, $white);
+            margin-bottom: 24px;
+          }
+          a {
+            @include text(400, 16px, 24px, $white);
+          }
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+
+      @include devices(md) {
+        .svg.logo svg {
+          max-height: 22px;
+          margin-right: 12px;
+        }
+        ul {
+          li {
+            margin-left: 40px;
+          }
+        }
+      }
+      @include devices(sm) {
+        display: block;
+        img {
+          margin-bottom: 24px;
+        }
+        ul {
+          display: block;
+          li {
+            margin-left: 0;
+            margin-bottom: 12px;
+            h3 {
+              @include text(700, 22px, 28px, $white);
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+      @include devices(xs) {
+        margin-bottom: 0;
+        ul {
+          li {
+            margin-bottom: 24px;
+            h3 {
+              @include text(700, 18px, 32px, $white);
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-bottom {
+    background: #292829;
+    &-wrapper {
+      padding: 28px 0;
+      @include d-flex(space-between);
+      small {
+        @include text(500, 16px, 24px, $white);
+      }
+      .socials {
+        @include d-flex(center);
+        .svg {
+          cursor: pointer;
+          transition: .3s;
+          svg {
+            margin-left: 24px;
+            fill: $white;
+          }
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+    @include devices(xs) {
+      background: none;
+      &-wrapper {
+        flex-direction: column-reverse;
+        padding: 16px 0;
+      }
+      small {
+        @include text(500, 16px, 24px, $white);
+      }
+      .socials {
+        width: 100%;
+        @include d-flex(space-evenly);
+        margin-bottom: 24px;
+        .svg svg path {
+          fill: $white !important;
+        }
+      }
+    }
+  }
+}

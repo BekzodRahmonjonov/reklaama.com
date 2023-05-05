@@ -1,0 +1,135 @@
+.forms {
+  &-group {
+    width: 325px;
+    position: relative;
+    & .ant-input-password,
+    & .ant-input-password input,
+    & .ant-select-selection,
+    &__input,
+    &__select,
+    & .ant-calendar-picker-input {
+      height: 56px;
+      background: $input-background;
+      border-radius: 16px;
+    }
+    input,
+    select {
+      padding: 16px 24px;
+      @include text(400, 15px, 24px, #242424);
+      &[type="code"] {
+        text-align: center;
+        letter-spacing: 4px;
+        &::placeholder {
+          color: #242424;
+        }
+      }
+    }
+    &__select {
+      &.forms-error {
+        height: 58px;
+      }
+    }
+    &__date {
+      width: 100%;
+      & .svg-wrapper {
+        width: 18px;
+        height: 18px;
+        margin-top: -8px;
+
+        & svg {
+          width: 18px;
+          height: 18px;
+          fill: $primary-color-dark;
+        }
+      }
+    }
+
+    &__select {
+      width: 100%;
+
+      & .ant-select-selection--single {
+        height: 56px;
+      }
+
+      & .ant-select-selection__rendered {
+        height: 100%;
+        @include d-flex(space-between);
+        padding: 16px 8px;
+        margin: 0;
+      }
+
+      & .ant-select-arrow {
+        margin-top: -12px;
+      }
+
+      & .ant-select-arrow-icon {
+        & svg {
+          fill: $primary-color;
+        }
+      }
+    }
+
+    & .my-placeholder {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding-left: 24px;
+      @include text(400, 15px, 24px, #b3b0b0);
+    }
+    &.active{
+      .my-placeholder{
+        display: none;
+      }
+    }
+    & .ant-form-item {
+      // margin-bottom: 12px;
+      &-label {
+        text-align: left;
+        line-height: 1.5;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  &-error {
+    border: 1px solid red;
+  }
+}
+
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled),
+.ant-input:hover,
+.ant-input:active,
+.ant-input:focus {
+  border-color: $primary-color;
+  box-shadow: 0 0 0 2px rgb(36, 36, 36, 0.2);
+  background: $input-background;
+}
+
+.ant-select-selection {
+  padding: 0 16px;
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $primary-color;
+    box-shadow: 0 0 0 2px rgb(36, 36, 36, 0.2);
+    background: $input-background;
+  }
+}
+
+.ant {
+  position: relative;
+  &-form {
+    &-item {
+      @include devices(xl) {
+        margin-bottom: 0px;
+        height: 75px;
+      }
+    }
+  }
+}
+
+.ant-calendar-picker {
+  width: 100%;
+  svg{
+    margin: -5px !important;
+  }
+}

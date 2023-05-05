@@ -1,0 +1,83 @@
+// ant popover
+.ant-popover {
+  &-message {
+    &-title {
+      padding-left: 30px;
+    }
+  }
+  &-buttons {
+    @include d-flex(center);
+    margin-left: auto;
+    .ant-btn {
+      background: #242424;
+      color: #fff;
+      border-radius: 4px;
+      padding: 8px 16px;
+      height: auto;
+      &:first-child {
+        background: #eff0f7;
+        color: #242424;
+      }
+    }
+  }
+}
+
+// ant dropdown
+
+.ant-dropdown {
+  &-menu {
+    &-item {
+      @include text(500, 15px, 19px, #242424);
+      @include d-flex(space-between);
+
+      span{
+        display: block;
+        &.companyCount{
+          display: inline;
+          margin-left: 8px;
+        }
+      }
+      &.price-range{
+        width: 150px;
+        padding-right: 20px;
+      }
+
+      .profile {
+        @include d-flex(flex-start);
+        min-height: 36px;
+        .svg svg {
+          width: 22px;
+          height: 22px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+}
+
+// ant slider
+
+.ant-slider {
+  &-track {
+    &,
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+  &-handle {
+    &,
+    &:hover,
+    &:focus {
+      border-color: $primary-color;
+      filter: drop-shadow(0 0 1 $primary-color);
+    }
+  }
+  &:hover {
+    .ant-slider-track {
+      background-color: $primary-color;
+    }
+    .ant-slider-handle:not(.ant-tooltip-open) {
+      border-color: $primary-color;
+    }
+  }
+}

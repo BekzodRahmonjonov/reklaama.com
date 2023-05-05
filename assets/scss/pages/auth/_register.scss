@@ -1,0 +1,78 @@
+.register {
+  &-wrapper {
+    width: 100%;
+    height: 100vh;
+    @include d-flex(space-between);
+    overflow: hidden;
+    &-left {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      padding: 24px 48px;
+      @include d-flex(space-between);
+      align-items: self-end;
+      flex-direction: column;
+      &-header {
+        width: 200%;
+        @include d-flex(flex-start);
+      }
+      .header-init {
+        display: none;
+      }
+    }
+    &-right {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      @include d-flex(center);
+      .my-image{
+        position: relative;
+        margin-top: 45px;
+        &::after {
+          content: "";
+          position: absolute;
+          right: -6%;
+          bottom: -18%;
+          z-index: 1;
+          width: 8vw;
+          height: 5vw;
+          background: $white;
+          filter: blur(10px);
+          border-radius: 50%;
+        }
+      }
+      img.register__img {
+        @include image();
+        height: auto;
+        object-fit: contain;
+        transform: scale(1.2) translateX(10%);
+      }
+    }
+
+    @include devices(md) {
+      &-right {
+        display: none;
+      }
+      &-left {
+        &-header {
+          width: 100%;
+        }
+      }
+    }
+    @include devices(sm) {
+      height: auto;
+      padding-top: 120px;
+      .header-init {
+        display: block;
+      }
+      .svg.logoD {
+        display: none;
+      }
+    }
+    @include devices(xs) {
+      &-left {
+        padding: 16px;
+      }
+    }
+  }
+}

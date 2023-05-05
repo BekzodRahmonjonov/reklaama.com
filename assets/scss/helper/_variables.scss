@@ -1,0 +1,56 @@
+
+body {
+  &.light {
+    --primary-color: #010001;
+    --secondary-color: #eff0f7;
+    --text-color-dark: #212121;
+    --text-color-light: #535353;
+    // mee
+    --text-primary-color: #242424;
+    --text-secondary-color: #b7b8c8;
+    --text-muted-color: #6e7191;
+    // bg
+    --background-secondary-color: #eeeff5;
+    --background-secondary2-color: #eff0f6;
+    --background-secondary3-color: #222323;
+    --white: #fff;
+    --input-background: #eff0f7;
+    
+  }
+  
+  &.dark {
+    --primary-color: #fff;
+    --secondary-color: #414142;
+    --text-color-dark: #cecdcd;
+    --text-color-light: #b8b5b5;
+    // mee
+    --text-primary-color: rgba(255, 255, 255, 0.9);
+    --text-secondary-color: rgba(255, 255, 255, 0.9);
+    --text-muted-color: #dedede;
+    // bg
+    --background-secondary-color: #454546;
+    --background-secondary2-color: #e8ebeb;
+    --background-secondary3-color: #f4f2f2;
+    --white: #010001;
+    --input-background: #eff0f7;
+  }
+}
+
+// me
+$text-primary-color: var(--text-primary-color);
+$text-secondary-color: var(--text-secondary-color);
+$text-muted-color: var(--text-muted-color);
+
+$background-secondary-color: var(--background-secondary-color);
+$background-secondary2-color: var(--background-secondary2-color);
+$background-secondary3-color: var(--background-secondary3-color);
+
+// other
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+
+$primary-color-dark: var(--primary-color-dark);
+$text-color-dark: var(--text-color-dark);
+$text-color-light: var(--text-color-light);
+$white: var(--white);
+$input-background: var(--input-background);

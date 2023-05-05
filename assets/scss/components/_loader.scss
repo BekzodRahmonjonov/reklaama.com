@@ -1,0 +1,122 @@
+.loader {
+  width: 100%;
+  height: 500px;
+  @include d-flex(center);
+    .mini-loader {
+        transform: scale(1.5);
+    }
+  .circular {
+    width: 100px;
+    height: 100px;
+    animation: rotate 2s linear infinite;
+    margin: auto;
+  }
+
+  .path {
+    stroke-dasharray: 1, 600;
+    stroke-dashoffset: 0;
+    stroke: $primary-color;
+    animation: dash 1.5s ease-in-out infinite;
+  }
+
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes dash {
+    0% {
+      stroke-dasharray: 1, 600;
+      stroke-dashoffset: 0;
+    }
+    50% {
+      stroke-dasharray: 89, 600;
+      stroke-dashoffset: -35px;
+    }
+    100% {
+      stroke-dasharray: 89, 600;
+      stroke-dashoffset: -124px;
+    }
+  }
+}
+
+// home loader
+.loader-home {
+  background: $white;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  @include d-flex(center);
+
+  .svg.logo {
+    svg {
+      height: 27px;
+      width: 200px;
+      path {
+        fill: $primary-color;
+      }
+    }
+  }
+  .contain {
+    @include d-flex(center);
+    flex-direction: column;
+  }
+}
+
+.linear-activity {
+  overflow: hidden;
+  width: 300px;
+  height: 4px;
+  background-color: $secondary-color;
+  margin: 20px auto;
+}
+
+.indeterminate {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.indeterminate:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-radius: 4px;
+  background-color: $primary-color;
+  animation: indeterminate_first 1.5s infinite ease-out;
+}
+
+.indeterminate:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  border-radius: 4px;
+  background-color: $text-color-light;
+  animation: indeterminate_second 1.5s infinite ease-in;
+}
+
+@keyframes indeterminate_first {
+  0% {
+    left: -100%;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 10%;
+  }
+}
+
+@keyframes indeterminate_second {
+  0% {
+    left: -150%;
+    width: 100%;
+  }
+  100% {
+    left: 100%;
+    width: 10%;
+  }
+}

@@ -1,0 +1,58 @@
+ul.sidebar {
+  li {
+    margin: 0 auto;
+    margin-bottom: 4px;
+    .nuxt-link {
+      width: 225px;
+      height: 56px;
+      @include d-flex(flex-start);
+      padding: 16px 13px;
+      border-radius: 8px;
+      transition: all 0.3s;
+
+      span {
+        display: inline-block;
+        margin-left: 8px;
+        @include text(500, 16px, 19px, $text-muted-color);
+        transition: all 0.3s;
+      }
+      small {
+        background-color: $text-muted-color;
+        color: $white;
+        padding: 2px 4px;
+        border-radius: 50%;
+        min-width: 22px;
+        height: 22px;
+        text-align: center;
+        margin-left: 8px; 
+        @include d-flex(center);
+      }
+
+      .dark-icon,
+      .light-icon {
+        width: 24px;
+        height: 24px;
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .dark-icon {
+        display: none;
+      }
+      &.nuxt-link-active,
+      &:hover {
+        background: $primary-color;
+        span {
+          color: $white;
+        }
+        .ligh-icon {
+          display: none;
+        }
+        .dark-icon {
+          display: block;
+        }
+      }
+    }
+  }
+}

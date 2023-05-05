@@ -1,0 +1,570 @@
+.marker {
+  &-wrapper {
+    padding-top: 16px;
+    margin-bottom: 140px;
+    .content {
+      &-header {
+        @include d-flex(flex-start);
+        @include text(500, 16px, 28px, $text-muted-color);
+        margin-bottom: 8px;
+
+        .svg {
+          margin-right: 8px;
+        }
+      }
+      &-main {
+        @include d-flex(flex-start);
+        align-items: flex-start;
+        gap: 30px;
+        h5 {
+          @include d-flex(flex-start);
+          @include text(500, 24px, 28px, #010001);
+          margin-bottom: 0;
+          span {
+            font-weight: 700;
+            font-size: 16px;
+            color: $text-muted-color;
+            margin-right: 8px;
+          }
+          .svg {
+            margin-right: 8px;
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+    small {
+      @include text(500, 13px, 28px, $text-secondary-color);
+    }
+    &-left {
+      height: 100%;
+      max-height: 500px;
+      &-carousel {
+        height: 100%;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 24px;
+        cursor: pointer;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+
+        .my-banner-photo {
+          @include d-flex(center);
+
+          position: absolute;
+          top: 0;
+          left: 50%;
+          z-index: 1;
+          width: 90%;
+          height: 100%;
+          background: rgba(36, 36, 36, 0.5);
+          transform: translateX(-50%);
+          opacity: 0;
+          .banner-uploader {
+            height: 100%;
+            .ant-upload {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              height: 100%;
+              background-color: transparent;
+              @include d-flex(center);
+              @include text(500, 16px, 20px, $white);
+            }
+          }
+          &.active {
+            opacity: 0;
+          }
+          &:hover {
+            opacity: 1;
+          }
+        }
+        .swiper {
+          overflow: hidden;
+          &-item {
+            width: 100%;
+            height: 505px;
+
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              width: 100%;
+              height: 100%;
+              background-image: url(https://img.freepik.com/premium-photo/large-white-blank-billboard-displayed-on-the-outdoor-against-the-blue-sky_174431-26.jpg?w=2000);
+              background-size: contain;
+              background-position: center;
+              background-repeat: no-repeat;
+              mix-blend-mode: multiply;
+              //multiply,
+            }
+          }
+        }
+        .swiper-button-prev {
+          left: 0;
+        }
+        .swiper-button-next {
+          right: 0;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+          top: 0;
+          height: 630px;
+          padding: 25px;
+          background: rgba(36, 36, 36, 0.3);
+          backdrop-filter: blur(10px);
+          opacity: 0;
+          &:after {
+            font-size: 30px;
+            font-weight: 800;
+            color: $primary-color;
+          }
+          &:hover {
+            opacity: 1;
+          }
+          @include devices(md) {
+            height: 130%;
+            padding: 16px;
+            &::after {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+      &-statistics {
+        background: #eff0f7;
+        padding: 12px 24px;
+        border-radius: 12px;
+        .content-header,
+        small,
+        h5 span {
+          color: #6e7191 !important;
+        }
+      }
+      &-filter {
+        margin-top: 24px;
+        button {
+          width: 100%;
+          border: 1px solid #d7d6d6;
+        }
+      }
+
+      .request_join {
+        margin-left: auto;
+        max-width: 520px;
+
+        button {
+          width: 100%;
+        }
+        .booking,
+        .contact {
+          margin: 16px 0;
+          width: 100%;
+        }
+        .contact {
+          border: 2px solid $text-secondary-color;
+          box-shadow: 0px 4px 12px rgba(98, 101, 158, 0.12);
+          border-radius: 8px;
+          padding: 16px;
+          margin-bottom: 24px;
+          &-info {
+            @include d-flex(space-between);
+            button {
+              padding: 8px 12px;
+              width: fit-content;
+              background-color: $secondary-color;
+              border-radius: 22px;
+              height: 35px;
+              margin-bottom: 0;
+              .svg svg {
+                width: 18px;
+                height: 18px;
+              }
+              span {
+                @include text(500, 16px, 19px, #6e7191);
+              }
+            }
+            small a {
+              @include text(500, 16px, 24px, $text-muted-color);
+            }
+            &:first-child {
+              border-bottom: 2px solid $secondary-color;
+              margin-bottom: 12px;
+              padding-bottom: 12px;
+            }
+          }
+        }
+        @include devices(md) {
+          max-width: 100%;
+        }
+      }
+    }
+    &-right {
+      height: 100%;
+      &.content-between {
+        height: 100%;
+        @include d-flex(space-between);
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .building {
+        width: 100%;
+        @include d-flex(space-between);
+        margin-bottom: 24px;
+        & > div {
+          // min-height: 112px;
+          height: 100%;
+          min-width: 150px;
+          flex: 1;
+          background: #eff0f7;
+          text-align: center;
+          padding: 20px 8px;
+          border-radius: 12px;
+          h2 {
+            font-size: 28px;
+            line-height: 34px;
+            margin-bottom: 8px;
+            width: 100%;
+            text-align: center;
+            color: #010001;
+          }
+          span {
+            @include text(500, 16px, 20px, #6e7191);
+            text-align: center;
+            width: 120%;
+            display: block;
+            margin-left: -8%;
+          }
+          &:first-child {
+            margin-right: 12px;
+          }
+        }
+      }
+      .location,
+      .company,
+      .spacial__keys,
+      .cost__amount {
+        width: 100%;
+        border: 2px solid #eff0f7;
+        border-radius: 12px;
+        padding: 12px 24px;
+        margin-bottom: 24px;
+        p {
+          @include text(500, 20px, 28px, $primary-color);
+          margin-bottom: 0;
+        }
+      }
+      .spacial__keys {
+        margin-bottom: 0;
+        ul li {
+          background: $secondary-color;
+          border-radius: 33px;
+          padding: 4px 12px;
+          @include text(700, 15px, 24px, $text-muted-color);
+          display: inline-flex;
+          margin: 6px;
+        }
+      }
+      .cost__amount {
+        background: #eff0f7;
+        border: none;
+        overflow: hidden;
+        h4 {
+          @include text(500, 24px, 28px, #010001);
+          margin-bottom: 0;
+        }
+        .content-header,
+        small {
+          color: #6e7191;
+        }
+      }
+
+      .contact {
+        border: 2px solid $text-secondary-color;
+        box-shadow: 0px 4px 12px rgba(98, 101, 158, 0.12);
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 24px;
+        &-info {
+          @include d-flex(space-between);
+          button {
+            padding: 8px 12px;
+            width: fit-content;
+            background-color: $secondary-color;
+            border-radius: 22px;
+            height: 35px;
+            margin-bottom: 0;
+            .svg svg {
+              width: 18px;
+              height: 18px;
+            }
+            span {
+              @include text(500, 16px, 19px, #6e7191);
+            }
+          }
+          small a {
+            @include text(500, 16px, 24px, $text-muted-color);
+          }
+          &:first-child {
+            border-bottom: 2px solid $secondary-color;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+          }
+        }
+      }
+
+      button {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 24px;
+        .svg {
+          margin-right: 8px;
+        }
+        background-color: #eff0f7 !important;
+        &.saved {
+          &,
+          &:hover,
+          &:active {
+            background-color: #eff0f7 !important;
+            box-shadow: 0px 3px 8px 1px rgba(24, 24, 24, 0.7);
+          }
+        }
+        span {
+          color: #010001;
+        }
+        &.booking {
+          background: $primary-color !important;
+          span {
+            color: $white !important;
+          }
+        }
+      }
+
+      strong.time__rolling {
+        @include d-flex(flex-start);
+        @include text(500, 16px, 28px, #6e7191);
+        .svg svg {
+          width: 20px;
+          height: 20px;
+          path {
+            fill: #6e7191;
+          }
+        }
+      }
+      .time-slider {
+        margin-bottom: 60px;
+        max-width: 560px;
+        margin-top: 45px;
+        .ant-slider {
+          margin: 14px;
+        }
+        .ant-slider-handle,
+        .ant-slider-handle:hover,
+        .ant-slider-handle:focus {
+          width: 24px;
+          height: 24px;
+          border-color: $white;
+          box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.25);
+          top: 0;
+        }
+      }
+      span.ant-slider-mark-text {
+        @include text(500, 20px, 28px, #6e7191);
+        padding: 6px 0;
+        min-width: 50px;
+        transition: 0.3s;
+        &-active {
+          color: #212121;
+        }
+        @include devices(sm) {
+          font-size: 14px;
+          padding: 4px 0;
+        }
+      }
+      .ant-slider-dot {
+        width: 10px;
+        height: 10px;
+        top: -3px;
+      }
+      .ant-slider-dot-active {
+        border-color: #fff;
+        box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    @include devices(xl) {
+      &-right {
+        .building {
+          & > div {
+            padding: 16px;
+            h2 {
+              font-size: 150%;
+            }
+          }
+        }
+      }
+    }
+    @include devices(md) {
+      &-left {
+        &-carousel {
+          height: 50vw;
+        }
+      }
+    }
+    @include devices(sm) {
+      .content {
+        &-main {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0;
+          & > div {
+            margin-bottom: 16px;
+          }
+        }
+      }
+      &-right {
+        .building {
+          & > div {
+            padding: 16px;
+            min-width: 48%;
+            h2 {
+              font-size: 22px;
+              line-height: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .svg svg {
+    width: auto;
+    height: auto;
+  }
+}
+
+.recommondation {
+  margin-top: 24px;
+  &-swiper {
+    height: 200px;
+    position: relative;
+  }
+  .swiper-button {
+    &-prev,
+    &-next {
+      &:after {
+        font-size: 24px;
+        font-weight: 800;
+        color: $white;
+        background-color: $background-secondary3-color;
+        min-width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        @include d-flex(center);
+      }
+    }
+    &-prev {
+      left: 0px;
+      transform: translateX(-50%);
+    }
+    &-next {
+      right: 0px;
+      transform: translateX(50%);
+    }
+  }
+
+  @include devices(xs) {
+    .swiper-button {
+      &-prev {
+        top: calc(100% + 50px);
+        left: calc(50% - 50px);
+        transform: translateX(-50%);
+      }
+      &-next {
+        top: calc(100% + 50px);
+        right: calc(50% - 50px);
+        transform: translateX(50%);
+      }
+    }
+  }
+}
+
+.filter-item {
+  width: 100%;
+  height: 200px;
+  @include d-flex(space-between);
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 12px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    @include image();
+  }
+  h5 {
+    @include text(500, 20px, 24px, #fff);
+    margin-bottom: 0;
+  }
+  p {
+    @include text(500, 16px, 24px, $white);
+  }
+  p.price {
+    font-size: 20px;
+    font-weight: 700;
+    margin: auto 0 -8px auto;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #e0dfdf;
+    backdrop-filter: blur(10px);
+    background-color: rgba(1, 0, 1, 0.3);
+  }
+  p.type {
+    margin-bottom: 0;
+    color: #fff;
+    margin-left: 0;
+    text-align: start;
+  }
+  &-event {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    padding: 12px;
+    @include d-flex(space-between);
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    transition: 0.3s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+#swiper {
+  &,
+  .swiper,
+  .swiper-slide > div {
+    height: 100% !important;
+  }
+}

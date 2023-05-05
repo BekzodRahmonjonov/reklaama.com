@@ -1,0 +1,194 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: $primary-color;
+  &-wrapper {
+    @include d-flex(space-between);
+    padding: 24px 0;
+    position: relative;
+
+    .svg.logo svg {
+      width: 200px;
+      max-height: 56px;
+      path {
+        fill: $white;
+      }
+    }
+    ul {
+      @include d-flex(center);
+      li {
+        margin-right: 40px;
+        @include text(500, 20px, 24px, $white);
+
+        a {
+          color: $white;
+        }
+        @include devices(lg) {
+          margin-right: 20px;
+        }
+      }
+      .user-cabinet {
+        margin-left: 20px;
+        .my-cabinet {
+          height: 56px;
+          background-color: $white;
+          color: $primary-color;
+          padding: 2px 16px;
+          border-radius: 8px;
+          @include d-flex(center);
+          .user-image {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            margin-right: 8px;
+            object-fit: cover;
+            border: 1px dashed;
+          }
+          .user-name {
+            @include text(500, 18px, 24px, $primary-color);
+            max-width: 120px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+          }
+        }
+      }
+    }
+    .svg {
+      cursor: pointer;
+    }
+
+    @include devices(md) {
+      .svg.logo svg {
+        width: 140px;
+        max-height: 20px;
+        margin-right: 12px;
+      }
+      ul {
+        li {
+          margin-right: 8px;
+          @include text(500, 17px, 22px, $white);
+        }
+        .user-cabinet {
+          margin-left: 12px;
+        }
+      }
+    }
+    @include devices(sm) {
+      height: 90px;
+      .svg svg {
+        path {
+          fill: $white;
+        }
+      }
+      ul {
+        display: none;
+      }
+    }
+  }
+  @include devices(sm) {
+    &-wrapper {
+      width: calc(100% + 24px);
+      margin-left: -12px;
+      padding: 0 12px;
+    }
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  z-index: -1;
+  width: calc(100% + 64px);
+  margin-left: -32px;
+  height: calc(100vh - 90px);
+  background-color: $white;
+  padding: 24px 0 36px 0;
+  transition: 0.5s ease-in-out;
+  overflow-y: auto;
+  transform: translateY(0);
+  
+  &-container{
+    min-height: 660px;
+  }
+  ul {
+    @include d-flex(center);
+    flex-direction: column;
+    .user-cabinet {
+      margin: 0 auto;
+      margin-bottom: 40px;
+      width: 100%;
+      max-width: 325px;
+      .ant-btn {
+        width: 100%;
+        background-color: $primary-color;
+        color: $white;
+      }
+      .my-cabinet {
+        width: 100%;
+        background-color: $primary-color;
+        .user-name {
+          color: $white;
+        }
+      }
+    }
+
+    a {
+      color: $text-primary-color;
+    }
+    .setting {
+      @include d-flex(flex-start);
+      .svg.mode {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+        svg path {
+          fill: $primary-color;
+        }
+      }
+    }
+    li {
+      text-align: center;
+      margin-bottom: 40px;
+      cursor: pointer;
+      @include text(500, 20px, 24px, $text-primary-color);
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &.banner {
+    transform: translateY(-100vh);
+    opacity: 0.9;
+  }
+
+  .sidebar {
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid $secondary-color;
+    li {
+      margin: 0 auto;
+      margin-bottom: 4px;
+      width: 100%;
+      max-width: 575px;
+      a {
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.header-init {
+  margin-bottom: 106px;
+  @include devices(sm) {
+    margin-bottom: 90px;
+  }
+}

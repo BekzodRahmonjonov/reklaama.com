@@ -1,0 +1,111 @@
+.setting {
+  &-lang {
+    @include d-flex(flex-start);
+    &-list {
+      background-color: $white;
+      border-radius: 8px;
+      padding: 6px 0;
+      &-btn,
+      &-btn:hover,
+      &-btn:active,
+      &-btn:focus {
+        @include d-flex(flex-start);
+        @include text(500, 20px, 24px, $primary-color);
+        width: 90px;
+        padding: 16px 8px;
+        background-color: $white !important;
+        color: $primary-color;
+        span {
+          margin-left: 6px;
+        }
+      }
+      ul.lang-dropdown {
+        transition: 0.3s;
+        li {
+          padding: 4px 12px;
+          a {
+            @include d-flex(flex-start);
+          }
+          span {
+            @include text(500, 18px, 24px, $primary-color);
+            margin-left: 8px;
+          }
+          &:hover {
+            background-color: rgba(53, 125, 249, 0.1);
+          }
+        }
+      }
+    }
+    .mode{
+      display: none;
+    }
+    @include devices(md) {
+      &-list {
+        &-btn,
+        &-btn:hover {
+          width: 75px;
+          padding: 8px 10px;
+          @include text(500, 15px, 24px, $primary-color);
+          img {
+            margin-right: 0 !important;
+          }
+        }
+        ul.lang-dropdown {
+          li {
+            padding: 4px 6px;
+            a {
+              @include d-flex(flex-start);
+            }
+            span {
+              @include text(500, 15px, 24px, $primary-color);
+              margin-left: 6px;
+            }
+            &:hover {
+              background-color: rgba(53, 125, 249, 0.1);
+            }
+          }
+        }
+      }
+    }
+    @include devices(sm) {
+      margin: 0 auto;
+      margin-bottom: 24px;
+      max-width: 325px;
+      .mode{
+        cursor: pointer;
+        display: block;
+        margin-right: 8px;
+      }
+
+      &-list {
+        &-btn,
+        &-btn:hover,
+        &-btn:active &-btn:focus {
+          width: 100% !important;
+          max-width: 325px !important;
+          padding: 8px 10px;
+          margin-bottom: 0 !important;
+          @include text(500, 16px, 24px, $text-primary-color);
+        }
+        ul.lang-dropdown {
+          li {
+            padding: 4px 12px;
+            a {
+              @include d-flex(flex-start);
+            }
+            span {
+              @include text(500, 16px, 24px, $text-primary-color);
+              margin-left: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include devices(sm) {
+    width: 100%;
+    &-lang {
+      width: 100%;
+    }
+  }
+}

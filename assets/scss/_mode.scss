@@ -1,0 +1,73 @@
+body {
+  .svg.logoD svg {
+    width: 200px;
+    height: 56px;
+    path {
+      fill: $primary-color;
+    }
+  }
+  &.dark {
+    background-color: $white;
+    .svg.mode svg path,
+    .svg.filter svg path {
+      fill: $white;
+    }
+    .forgot__password {
+      .svg.logoD svg {
+        path {
+          fill: $white;
+        }
+      }
+    }
+
+    ul.sidebar {
+      li .nuxt-link {
+        &.nuxt-link-active,
+        &:hover {
+          .dark-icon {
+            svg path{
+              fill: $white; 
+            }
+          }
+        }
+      }
+    }
+
+    button.order-back {
+      .svg svg {
+        path{
+          stroke: $primary-color;
+        }
+      }
+    }
+
+    .footer {
+      &-bottom {
+        background: $background-secondary2-color;
+        .svg svg path {
+          fill: $white !important;
+        }
+      }
+    }
+
+    .ant-input[disabled],
+    .has-error .ant-input,
+    .has-error .ant-input:hover,
+    .ant-select-selection {
+      background-color: $input-background;
+      color: $white;
+    }
+    .ant-steps-item .ant-steps-item-icon > .ant-steps-icon {
+      color: $white;
+    }
+    .ant-steps-item
+      > .ant-steps-item-container
+      > .ant-steps-item-content
+      > .ant-steps-item-title {
+      color: #fff;
+    }
+    .ant-select svg{
+      stroke: $white;
+    }
+  }
+}

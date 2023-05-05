@@ -1,0 +1,37 @@
+@import "login", 'register', 'forgot-password';
+
+.auth {
+  &-body {
+    margin: 0 auto;
+    h2 {
+      margin-bottom: 8px;
+    }
+    p {
+      @include text(500, 16px, 19px, $text-secondary-color);
+      margin-bottom: 48px;
+      @include devices(xl){
+        margin-bottom: 26px;
+      }
+    }
+    span.forgot-password {
+      @include d-flex(flex-end);
+      margin-bottom: 24px;
+    }
+    button {
+      width: 100%;
+      margin-bottom: 12px;
+      @include devices(xl){
+        margin: 12px 0;
+      }
+    }
+    p.register {
+      text-align: center;
+    }
+
+    @include devices(sm){
+      p{
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

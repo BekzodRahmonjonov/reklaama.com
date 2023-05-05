@@ -1,0 +1,146 @@
+.about {
+  padding-top: 56px;
+  overflow-x: hidden;
+
+  &-wrapper {
+    & > div {
+      margin-bottom: 140px;
+      .content {
+        max-width: 50%;
+        h2 {
+          margin-bottom: 36px;
+        }
+        p {
+          @include text(400, 24px, 135%, $text-primary-color);
+          margin-bottom: 24px;
+        }
+        span {
+          @include text(500, 20px, 135%, $text-secondary-color);
+        }
+      }
+      @include devices(lg) {
+        .content {
+          h2 {
+            margin-bottom: 24px;
+          }
+          p {
+            @include text(400, 22px, 120%, $text-primary-color);
+            margin-bottom: 16px;
+            margin-right: 12px;
+          }
+        }
+      }
+      @include devices(md) {
+        .content {
+          h2 {
+            margin-bottom: 24px;
+          }
+          p {
+            @include text(400, 22px, 120%, $text-primary-color);
+            margin-bottom: 16px;
+            margin-right: 12px;
+          }
+        }
+      }
+      @include devices(sm) {
+        .content {
+          max-width: 100%;
+        }
+      }
+      @include devices(xs) {
+        margin-bottom: 80px;
+        h2 {
+          text-align: center;
+        }
+        p {
+          @include text(400, 20px, 135%, $text-primary-color);
+          margin-bottom: 12px;
+        }
+        span {
+          @include text(500, 16px, 135%, $text-secondary-color);
+        }
+      }
+    }
+
+    &-home {
+      @include d-flex(space-between);
+      align-items: flex-start;
+
+      @include devices(sm) {
+        flex-direction: column-reverse;
+        .images {
+          width: 100%;
+          margin-bottom: 24px;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    &-certificate {
+      @include d-flex(space-between);
+      align-items: flex-start;
+      .images {
+        filter: drop-shadow(0px 40px 250px rgba(163, 172, 196, 0.4));
+        img {
+          margin-right: 24px;
+        }
+      }
+      @include devices(lg) {
+        .images {
+          @include d-flex(space-between);
+        }
+      }
+      @include devices(sm) {
+        flex-direction: column;
+        .images {
+          width: 100%;
+          margin-bottom: 24px;
+          img {
+            flex: 1;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      @include devices(xs) {
+        .images {
+          img {
+            width: 130px;
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+    &-partners {
+      h2 {
+        margin-bottom: 60px;
+      }
+      &-item {
+        cursor: pointer;
+        @include d-flex(center);
+        border-radius: 4px;
+        height: 60px;
+        padding: 12px;
+
+        @include devices(sm) {
+          background: none;
+          img {
+            height: auto;
+          }
+        }
+        @include devices(xs) {
+          img {
+            height: 90%;
+          }
+        }
+      }
+      @include devices(xs) {
+        h2 {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,658 @@
+.home {
+  overflow: hidden;
+  &-wrapper {
+    max-width: 100%;
+    .banner {
+      margin-bottom: 140px;
+      @include d-flex(space-between);
+      height: 85vh;
+      margin-top: -2px;
+      max-height: 1000px;
+      &-content {
+        h1 {
+          max-width: 600px;
+          @include text(700, 56px, 70px, $text-primary-color);
+          margin-bottom: 24px;
+        }
+        p {
+          max-width: 540px;
+          @include text(400, 20px, 24px, $text-secondary-color);
+        }
+
+        @include devices(lg) {
+          h1,
+          p {
+            max-width: 45vw;
+          }
+          h1 {
+            font-size: 42px;
+            line-height: 110%;
+          }
+        }
+        @include devices(md) {
+          h1,
+          p {
+            max-width: 48vw;
+          }
+          h1 {
+            font-size: 34px;
+            line-height: 42px;
+            margin-bottom: 18px;
+          }
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+      &-carousel {
+        &-img {
+          max-width: 50vw;
+          max-height: 1000px;
+          @include d-flex(flex-end);
+          align-items: flex-end;
+          position: relative;
+          img {
+            width: 900px;
+            height: 100%;
+            margin-right: -48px;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: 4%;
+            left: 7%;
+            z-index: -1;
+            border-radius: 40%;
+            width: 85%;
+            height: 70%;
+            background-color: $primary-color;
+            filter: blur(100px);
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: -6%;
+            left: 40%;
+            z-index: 1;
+            border-radius: 40%;
+            width: 20%;
+            height: 10%;
+            background-color: $white;
+            // background-color: $primary-color;
+            filter: blur(10px);
+          }
+          @include devices(xl) {
+            max-width: 40vw;
+            img {
+              width: 130%;
+            }
+            &:after {
+              left: 0;
+            }
+            &:before {
+              left: 35%;
+              bottom: -5%;
+            }
+          }
+          @include devices(lg) {
+            &:after {
+              width: 75%;
+              height: 50%;
+              left: 2%;
+              top: 10%;
+            }
+            &:before {
+              width: 90px;
+              height: 50px;
+            }
+          }
+        }
+      }
+      @include devices(lg) {
+        height: auto;
+        padding: 80px 0;
+      }
+      @include devices(sm) {
+        padding: 0;
+        margin: 120px 0;
+        &-content {
+          h1,
+          p {
+            max-width: 100%;
+            text-align: center;
+          }
+          h1 {
+            font-size: 36px;
+            line-height: 36px;
+            margin-bottom: 12px;
+          }
+        }
+        &-carousel {
+          display: none;
+        }
+      }
+      @include devices(xs) {
+        &-content {
+          h1 {
+            @include text(500, 28px, 34px, $primary-color);
+          }
+          p {
+            @include text(400, 16px, 19px, $text-secondary-color);
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .overview {
+      margin-bottom: 140px;
+      h2 {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+      p {
+        max-width: 73vw;
+        text-align: center;
+        margin: 0 auto 60px auto;
+      }
+      p._mb-140 {
+        margin-bottom: 140px;
+        @include devices(sm) {
+          margin-bottom: 80px;
+        }
+      }
+      .platform {
+        max-width: 70vw;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        &-notice {
+          @include d-flex(flex-start);
+          &-title {
+            margin: 0;
+            margin-left: 36px;
+            @include text(400, 24px, 160%, $primary-color);
+            max-width: 350px;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              left: -24px;
+              top: 16px;
+              width: 8px;
+              height: 8px;
+              background-color: $primary-color;
+              border-radius: 50%;
+            }
+          }
+        }
+        @include devices(md) {
+          &-notice {
+            video {
+              width: 70px;
+              height: 70px;
+            }
+            &-title {
+              @include text(400, 22px, 130%, $primary-color);
+              max-width: 100%;
+            }
+          }
+        }
+        @include devices(sm) {
+          &-notice {
+            &-title {
+              @include text(400, 20px, 130%, $primary-color);
+            }
+          }
+        }
+        @include devices(xs) {
+          &-notice {
+            margin-bottom: 12px;
+            video {
+              width: 60px;
+              height: 60px;
+            }
+            &-title {
+              @include text(400, 22px, 110%, $primary-color);
+              max-width: 100%;
+            }
+          }
+        }
+      }
+
+      &-video {
+        margin-bottom: 140px;
+        .content {
+          position: relative;
+          margin-bottom: 16px;
+          @include d-flex(center);
+          video {
+            max-height: 70vh;
+          }
+        }
+        p {
+          text-align: center;
+          margin-bottom: 0;
+          @include devices(xs) {
+            @include text(400, 20px, 110%, $text-muted-color);
+            max-width: 100%;
+          }
+        }
+      }
+      &-filter {
+        background: $primary-color;
+        margin-bottom: 60px;
+        border-radius: 8px;
+        padding: 24px 40px;
+        @include d-flex(space-between);
+        position: relative;
+        &-left {
+          @include d-flex(flex-start);
+          flex: 2;
+          .svg.filter {
+            cursor: pointer;
+            svg {
+              width: 24px;
+              height: 24px;
+              path {
+                stroke: $white;
+              }
+            }
+          }
+          .search-form {
+            @include d-flex(center);
+            margin: 0 16px;
+            border: 1px solid $white;
+            border-radius: 22px;
+            height: 36px;
+            padding: 8px;
+            padding-right: 0;
+            max-width: 350px;
+            min-width: 300px;
+            overflow: hidden;
+            position: relative;
+            .input-placeholder {
+              position: absolute;
+              top: 8px;
+              left: 12px;
+              z-index: 0;
+              width: 100%;
+              background: $primary-color;
+              .text-typing > .dynamic-txt {
+                @include text(600, 16px, 20px, grey);
+                height: 20px;
+                overflow: hidden;
+              }
+              .dynamic-txt > li {
+                font-weight: 500;
+                position: relative;
+                max-width: fit-content;
+              }
+
+              .dynamic-txt li span {
+                margin: 5px 0;
+                line-height: 20px;
+              }
+
+              .dynamic-txt li span::after {
+                position: absolute;
+                content: "";
+                left: 0;
+                height: 100%;
+                width: 100%;
+                line-height: 20px;
+                background: $primary-color;
+                border-left: 2px solid grey;
+                animation: typing 3s steps(10) infinite;
+              }
+
+              &.active {
+                display: none;
+              }
+            }
+            &-input {
+              position: absolute;
+              top: 6px;
+              left: 8px;
+              z-index: 1;
+              flex: 1;
+              width: 85%;
+              background-color: transparent;
+              border: none;
+              outline: none;
+              @include text(500, 16px, 19px, $white);
+            }
+            .svg {
+              position: absolute;
+              top: 0;
+              right: 0;
+              z-index: 2;
+              background: $background-secondary-color;
+              width: 34px;
+              height: 34px;
+              cursor: pointer;
+              svg {
+                path,
+                circle {
+                  stroke: $primary-color;
+                }
+              }
+            }
+            @include devices(lg) {
+              min-width: 150px;
+            }
+          }
+          @include devices(sm) {
+            width: 50%;
+            .search-form {
+              max-width: 100%;
+              width: 100%;
+              margin-right: 0;
+            }
+          }
+          @include devices(xs) {
+            width: 100%;
+          }
+        }
+        &-right {
+          max-width: 900px;
+          @include d-flex(space-between);
+          flex: 3;
+          .filter-price {
+            position: relative;
+            &-slider {
+              position: absolute;
+              left: 0;
+              z-index: 10;
+              filter: drop-shadow(0 0 1px $primary-color);
+              width: 120px;
+              padding: 8px 12px;
+              background: $white;
+              border-radius: 4px;
+            }
+          }
+          .link {
+            cursor: pointer;
+            @include d-flex(center);
+            @include text(500, 24px, 36px, $white);
+            .svg svg {
+              width: 24px;
+              height: 24px;
+              transform: scale(1.3);
+              margin-bottom: -5px;
+              path {
+                fill: $white;
+              }
+            }
+            &.active {
+              color: rgb(173, 172, 172);
+              .svg svg path {
+                fill: rgb(173, 172, 172);
+              }
+            }
+
+            @include devices(xl) {
+              @include text(500, 20px, 36px, $white);
+            }
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          left: 12px;
+          top: 12px;
+          z-index: -1;
+          border-radius: 8px;
+          width: 100%;
+          height: 100%;
+          background-color: #d9d9db;
+        }
+
+        @include devices(lg) {
+          &-left {
+            .svg svg {
+              width: 20px;
+              height: 20px;
+            }
+            h4 {
+              font-size: 22px;
+            }
+          }
+          &-right {
+            .link {
+              font-size: 18px;
+            }
+          }
+        }
+        @include devices(md) {
+          &-left {
+            .svg svg {
+              width: 18px;
+              height: 18px;
+            }
+            h4 {
+              font-size: 20px;
+            }
+          }
+          &-right {
+            flex: 4;
+            .link {
+              font-size: 16px;
+            }
+          }
+        }
+        @include devices(sm) {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 12px 16px;
+          &-right {
+            width: 100%;
+          }
+        }
+        @include devices(xs) {
+          &::after {
+            display: none;
+          }
+          &-right {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        }
+      }
+      &-map {
+        height: 45vw;
+        max-height: 1000px;
+        position: relative;
+        &-selection {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          z-index: 1;
+          width: 225px;
+        }
+        .forms-group__select .ant-select-selection--single {
+          @include text(500, 18px, 140%, $primary-color);
+          border-radius: 8px;
+        }
+        .current-location {
+          max-width: 300px;
+          & > span {
+            display: block;
+            width: 100%;
+            @include text(500, 16px, 24px, #242424);
+            margin-bottom: 8px;
+            @include devices(xs) {
+              font-size: 15px;
+              line-height: 20px;
+            }
+          }
+          button {
+            width: 100%;
+            height: 52px;
+            font-size: 18px;
+            background: #242424 !important;
+            color: #fff;
+            @include devices(xs) {
+              height: 44px;
+              font-size: 16px;
+            }
+          }
+        }
+
+        @include devices(lg) {
+          height: 55vw;
+
+          .ymaps-2-1-79-zoom,
+          .ymaps-2-1-79-controls__control_toolbar,
+          .ymaps-2-1-79-gotoymaps,
+          .ymaps-2-1-79-controls__control {
+            display: none;
+          }
+        }
+        @include devices(xs) {
+          height: 370px;
+
+          &-selection {
+            bottom: -18px;
+            right: 50%;
+            top: auto;
+            transform: translate(50%, 100%);
+
+            .forms-group__select .ant-select-selection--single {
+              @include text(500, 16px, 120%, $primary-color);
+            }
+          }
+        }
+      }
+      @include devices(lg) {
+        & > p,
+        .platform {
+          max-width: 100%;
+        }
+      }
+      @include devices(xs) {
+        margin-bottom: 120px;
+        & > p {
+          margin-bottom: 80px;
+        }
+        &-video {
+          margin-bottom: 80px;
+        }
+      }
+    }
+    .billboard {
+      @include d-flex(center);
+      flex-wrap: wrap;
+      padding-top: 140px;
+      &-item {
+        width: calc(20% - 24px);
+        height: 204px;
+        margin: 12px;
+        background: $background-secondary2-color;
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        align-self: center;
+        justify-self: center;
+
+        span {
+          display: inline-block;
+          padding: 12px 18px;
+          @include text(500, 16px, 19px, #242424);
+        }
+        img {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          transition: 0.4s;
+        }
+        &-content {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          z-index: 1;
+          padding: 12px 18px;
+          transition: 0.5s;
+          transform: translateY(100%);
+          opacity: 0.2;
+          p {
+            @include text(500, 18px, 24px, #242424);
+            margin-bottom: 0;
+            color: #242424 !important;
+          }
+        }
+
+        &:hover {
+          img {
+            transform: translateY(100%) scale(0.6);
+            opacity: 0.2;
+          }
+          .billboard-item-content {
+            transform: translateY(0%);
+            opacity: 1;
+          }
+        }
+      }
+      @include devices(lg) {
+        &-item {
+          width: calc(25% - 24px);
+        }
+      }
+      @include devices(md) {
+        &-item {
+          width: calc(33.3% - 24px);
+        }
+      }
+      @include devices(sm) {
+        padding-top: 80px;
+        &-item {
+          width: calc(50% - 12px);
+          margin: 6px;
+        }
+      }
+      @include devices(xs) {
+        &-item {
+          height: 120px;
+          span {
+            padding: 8px;
+          }
+          img {
+            height: 56px;
+          }
+          &-content {
+            padding: 8px;
+            p {
+              @include text(500, 14px, 15px, $secondary-color);
+            }
+          }
+        }
+      }
+    }
+    #overview-map {
+      padding-top: 140px;
+      @include devices(sm) {
+        padding-top: 80px;
+      }
+    }
+    .top-locations {
+      margin: 140px 0;
+    }
+  }
+  @include devices(xs) {
+    overflow-x: hidden;
+  }
+}
+
+.ant-dropdown-menu {
+  min-width: 120px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 8px);
+  }
+  100% {
+    left: 0;
+  }
+}

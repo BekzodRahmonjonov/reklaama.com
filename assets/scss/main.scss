@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import "helper", 'custom', "components", "pages", "mode";
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+body{
+  margin-top: -2px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1824px;
+  padding: 0 48px;
+  margin: 0 auto;
+
+  @include devices(md) {
+    padding: 0 32px;
+  }
+  @include devices(xs) {
+    padding: 0 16px;
+  }
+}
+.mini-container {
+  width: 100%;
+  max-width: 1710px;
+  padding: 0 96px;
+  margin: 0 auto;
+
+  @include devices(md) {
+    padding: 0 32px;
+  }
+  @include devices(xs) {
+    padding: 0 16px;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+h2 {
+  @include text(700, 36px, 43px, $text-primary-color);
+
+  @include devices(md) {
+    @include text(700, 32px, 36px, $text-primary-color);
+  }
+  @include devices(xs) {
+    @include text(700, 24px, 140%, $text-primary-color);
+  }
+}
+p {
+  @include text(400, 24px, 168%, $primary-color);
+
+  @include devices(md) {
+    @include text(400, 22px, 140%, $primary-color);
+  }
+  @include devices(xs) {
+    @include text(400, 20px, 160%, $primary-color);
+  }
+}
+svg {
+  width: 24px;
+  height: 24px;
+}
+
+.logo {
+  height: 27px;
+  @include devices(sm) {
+    height: 22px;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+.ymaps-2-1-79-search {
+  display: none !important;
+}
+

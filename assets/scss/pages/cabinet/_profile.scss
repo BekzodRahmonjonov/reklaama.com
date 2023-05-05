@@ -1,0 +1,88 @@
+.profile {
+  .cabinet-user-wrapper-main {
+    @include d-flex(center);
+  }
+  &-forms {
+    border: 3px solid #eff0f7;
+    border-radius: 8px;
+    padding: 56px;
+    .forms-group {
+      width: 434px;
+    }
+    span.ant-form-item-children {
+      @include d-flex(space-between);
+
+      input {
+        width: 376px;
+      }
+      .edit-btn {
+        width: 46px;
+        height: 46px;
+        margin-left: 12px;
+        background: $input-background;
+        border: 1px solid #d9d9d9;
+        border-radius: 8px;
+      }
+    }
+    .update {
+      width: 100%;
+      margin-top: 36px;
+    }
+    .upload {
+      @include d-flex(center);
+      flex-direction: column;
+      cursor: pointer;
+      .avatar-uploader {
+        margin-bottom: 0;
+        padding: 0;
+        @include d-flex(center);
+        .ant-upload {
+          border-radius: 50%;
+          width: 90px;
+          height: 90px;
+          padding: 0;
+          img {
+            @include image();
+            border-radius: 50%;
+          }
+          span.msg {
+            display: none;
+          }
+        }
+      }
+      span {
+        display: block;
+        @include text(500, 16px, 19px, $text-primary-color);
+        padding: 13px;
+        margin-bottom: 36px;
+      }
+    }
+  }
+
+  @include devices(md){
+    .cabinet-user-wrapper-main {
+      margin-left: 40px;
+    }
+    &-forms{
+      padding: 24px;
+      .forms-group {
+        width: 400px;
+      }
+    }
+  }
+  @include devices(sm){
+    .cabinet-user-wrapper-main {
+      margin-left: 0;
+    }
+    &-forms{
+      padding: 16px;
+      .forms-group {
+        width: 320px;
+      }
+    }
+  }
+}
+
+.ant-form input[type="file"] {
+  display: none;
+}

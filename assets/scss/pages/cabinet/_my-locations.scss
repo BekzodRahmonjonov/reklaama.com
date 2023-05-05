@@ -1,0 +1,44 @@
+.my-locations {
+  .map {
+    width: 100%;
+    height: 32vw;
+    min-height: 500px;
+    max-height: 1000px;
+
+    .ymaps-2-1-79-zoom,
+    .ymaps-2-1-79-controls__control_toolbar,
+    .ymaps-2-1-79-gotoymaps,
+    .ymaps-2-1-79-controls__control {
+      display: none;
+    }
+  }
+  @include devices(lg) {
+    .map {
+      margin-left: auto;
+      width: 95%;
+      height: 50vw;
+    }
+  }
+  @include devices(md) {
+    .map {
+      margin-left: auto;
+      width: 90%;
+      height: 50vw;
+    }
+  }
+  @include devices(sm) {
+    .map {
+      width: 100%;
+      height: 50vw;
+      min-height: 410px;
+    }
+  }
+  @include devices(xs) {
+    .pagination .left, .pagination .right {
+      max-width: 48px;
+    }
+    button {
+      width: 100%;
+    }
+  }
+}

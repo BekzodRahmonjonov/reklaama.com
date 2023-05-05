@@ -1,0 +1,56 @@
+{
+  "HomeMap": {
+    "description": "Auto imported from components/homeMap.vue"
+  },
+  "Lang": {
+    "description": "Auto imported from components/lang.vue"
+  },
+  "MarkerSwiper": {
+    "description": "Auto imported from components/markerSwiper.vue"
+  },
+  "Sidebar": {
+    "description": "Auto imported from components/sidebar.vue"
+  },
+  "Svgicon": {
+    "description": "Auto imported from components/svgicon.vue"
+  },
+  "Timer": {
+    "description": "Auto imported from components/timer.vue"
+  },
+  "CustomPagination": {
+    "description": "Auto imported from components/custom/pagination.vue"
+  },
+  "CustomTable": {
+    "description": "Auto imported from components/custom/table.vue"
+  },
+  "LayoutsFooter": {
+    "description": "Auto imported from components/layouts/Footer.vue"
+  },
+  "LoaderHome": {
+    "description": "Auto imported from components/loader/home.vue"
+  },
+  "Loader": {
+    "description": "Auto imported from components/loader/index.vue"
+  },
+  "SwiperRecommondation": {
+    "description": "Auto imported from components/swiper/recommondation.vue"
+  },
+  "FormUploadAvatar": {
+    "description": "Auto imported from components/form/upload/avatar.vue"
+  },
+  "FormUploadBannerPhoto": {
+    "description": "Auto imported from components/form/upload/bannerPhoto.vue"
+  },
+  "FormUploadFile": {
+    "description": "Auto imported from components/form/upload/file.vue"
+  },
+  "LayoutsHeader": {
+    "description": "Auto imported from components/layouts/header/index.vue"
+  },
+  "LayoutsHeaderMenu": {
+    "description": "Auto imported from components/layouts/header/menu/index.vue"
+  },
+  "LayoutsHeaderMenuMobile": {
+    "description": "Auto imported from components/layouts/header/menu/mobile.vue"
+  }
+}

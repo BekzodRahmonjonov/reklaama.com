@@ -1,0 +1,69 @@
+.ant-btn,
+.ant-btn:focus,
+.ant-btn:hover {
+  @include d-flex(center);
+  @include text(500, 20px, 24px, $white);
+  background: $primary-color;
+  padding: 16px;
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  transition: 0.3s;
+  .svg {
+    margin-right: 8px;
+  }
+  @include devices(md){
+    @include text(500, 18px, 22px, $white);
+    padding: 12px;
+    height: 52px;
+  }
+}
+
+.ant-btn-secondary,
+.ant-btn-secondary:focus,
+.ant-btn-secondary:hover {
+  background: $secondary-color;
+  color: $primary-color;
+  
+  &:focus,
+  &:hover {
+    background: $secondary-color;
+  }
+}
+
+
+
+.see-detail-btn{
+  background: #242424 !important;
+  color: #fff !important;
+  padding: 4px 16px !important;
+  border-radius: 4px !important;
+  height: 40px;
+  margin-top: 8px;  
+  &:hover{
+    height: 40px;
+  }
+}
+.filter-price-slider-btn {
+  &, &:hover{
+    background: $white;
+    border: 2px solid $primary-color;
+    height: 36px;
+    margin-top: 16px;
+    @include text(500, 20px, 140%, $primary-color);
+    width: 100%;
+  }
+}
+
+.get-file{
+  margin-bottom: 24px;
+  min-width: 150px;
+  .svg svg{
+    path{
+      fill: $white;
+    }
+  }
+  a{
+    color: $white;
+  }
+}

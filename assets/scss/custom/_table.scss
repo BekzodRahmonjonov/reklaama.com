@@ -1,0 +1,104 @@
+.table {
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-top: 40px;
+  table {
+    width: 100%;
+    thead {
+      background: $primary-color;
+      padding: 4px 16px;
+
+      tr {
+        width: 1%;
+        th {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 150%;
+          color: $white;
+          padding: 16px 24px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:last-child {
+          td {
+            border-bottom: none;
+          }
+        }
+        td {
+          background-color: $background-secondary-color;
+        }
+        tbody {
+          tr {
+            &:last-child {
+              td {
+                border-bottom: none;
+              }
+            }
+            td {
+              border-bottom: 1px solid #8a8a8a;
+              padding: 16px 24px;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 150%;
+              color: $primary-color;
+            }
+          }
+        }
+
+        td {
+          border-bottom: 1px solid #8a8a8a;
+          padding: 16px 24px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 150%;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  &-action {
+    @include d-flex(center);
+    &-btn {
+      width: 40px;
+      height: 40px;
+      max-height: 40px;
+      background: $primary-color;
+      @include d-flex(center);
+      border-radius: 8px;
+      cursor: pointer;
+      &:first-child {
+        margin-right: 8px;
+      }
+      .svg svg {
+        margin-left: 10px;
+        path {
+          stroke: $white;
+        }
+      }
+    }
+  }
+
+  @include devices(lg) {
+    margin-left: auto;
+    width: 95%;
+  }
+  @include devices(md) {
+    margin-left: auto;
+    width: 90%;
+  }
+  @include devices(sm) {
+    margin-left: auto;
+    width: 100%;
+    table {
+      thead tr th {
+        padding: 12px 16px;
+      }
+      tbody tr td {
+        padding: 12px 16px;
+      }
+    }
+  }
+}

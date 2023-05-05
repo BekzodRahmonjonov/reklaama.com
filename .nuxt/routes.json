@@ -1,0 +1,450 @@
+[
+  {
+    "name": "about___ru",
+    "path": "/about",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/about/index.vue",
+    "chunkName": "pages/about/index",
+    "_name": "_edf25d5a"
+  },
+  {
+    "name": "index___en",
+    "path": "/en",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_75f68195"
+  },
+  {
+    "name": "index___oz",
+    "path": "/oz",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_75f68195"
+  },
+  {
+    "name": "index___uz",
+    "path": "/uz",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_75f68195"
+  },
+  {
+    "name": "auth-check-otp___ru",
+    "path": "/auth/check-otp",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/check-otp.vue",
+    "chunkName": "pages/auth/check-otp",
+    "_name": "_d85b1ce8"
+  },
+  {
+    "name": "auth-forgot-password___ru",
+    "path": "/auth/forgot-password",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/forgot-password.vue",
+    "chunkName": "pages/auth/forgot-password",
+    "_name": "_5e2134ab"
+  },
+  {
+    "name": "auth-login___ru",
+    "path": "/auth/login",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_347dd98f"
+  },
+  {
+    "name": "auth-otp___ru",
+    "path": "/auth/otp",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/otp.vue",
+    "chunkName": "pages/auth/otp",
+    "_name": "_1ac193d1"
+  },
+  {
+    "name": "auth-register___ru",
+    "path": "/auth/register",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_3f99a0ed"
+  },
+  {
+    "name": "auth-reset-password___ru",
+    "path": "/auth/reset-password",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/reset-password.vue",
+    "chunkName": "pages/auth/reset-password",
+    "_name": "_6347a323"
+  },
+  {
+    "name": "about___en",
+    "path": "/en/about",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/about/index.vue",
+    "chunkName": "pages/about/index",
+    "_name": "_edf25d5a"
+  },
+  {
+    "name": "about___oz",
+    "path": "/oz/about",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/about/index.vue",
+    "chunkName": "pages/about/index",
+    "_name": "_edf25d5a"
+  },
+  {
+    "name": "about___uz",
+    "path": "/uz/about",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/about/index.vue",
+    "chunkName": "pages/about/index",
+    "_name": "_edf25d5a"
+  },
+  {
+    "name": "cabinet-admin-notification___ru",
+    "path": "/cabinet/admin/notification",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/admin/notification.vue",
+    "chunkName": "pages/cabinet/admin/notification",
+    "_name": "_19d0ac0f"
+  },
+  {
+    "name": "cabinet-admin-statistics___ru",
+    "path": "/cabinet/admin/statistics",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/admin/statistics.vue",
+    "chunkName": "pages/cabinet/admin/statistics",
+    "_name": "_0ca7e972"
+  },
+  {
+    "name": "cabinet-user-display___ru",
+    "path": "/cabinet/user/display",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/display/index.vue",
+    "chunkName": "pages/cabinet/user/display/index",
+    "_name": "_de56c136"
+  },
+  {
+    "name": "cabinet-user-my-locations___ru",
+    "path": "/cabinet/user/my-locations",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/my-locations.vue",
+    "chunkName": "pages/cabinet/user/my-locations",
+    "_name": "_68cac18d"
+  },
+  {
+    "name": "cabinet-user-notification___ru",
+    "path": "/cabinet/user/notification",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/notification.vue",
+    "chunkName": "pages/cabinet/user/notification",
+    "_name": "_09d37a0a"
+  },
+  {
+    "name": "cabinet-user-profile___ru",
+    "path": "/cabinet/user/profile",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/profile.vue",
+    "chunkName": "pages/cabinet/user/profile",
+    "_name": "_2c258fc9"
+  },
+  {
+    "name": "auth-check-otp___en",
+    "path": "/en/auth/check-otp",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/check-otp.vue",
+    "chunkName": "pages/auth/check-otp",
+    "_name": "_d85b1ce8"
+  },
+  {
+    "name": "auth-forgot-password___en",
+    "path": "/en/auth/forgot-password",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/forgot-password.vue",
+    "chunkName": "pages/auth/forgot-password",
+    "_name": "_5e2134ab"
+  },
+  {
+    "name": "auth-login___en",
+    "path": "/en/auth/login",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_347dd98f"
+  },
+  {
+    "name": "auth-otp___en",
+    "path": "/en/auth/otp",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/otp.vue",
+    "chunkName": "pages/auth/otp",
+    "_name": "_1ac193d1"
+  },
+  {
+    "name": "auth-register___en",
+    "path": "/en/auth/register",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_3f99a0ed"
+  },
+  {
+    "name": "auth-reset-password___en",
+    "path": "/en/auth/reset-password",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/reset-password.vue",
+    "chunkName": "pages/auth/reset-password",
+    "_name": "_6347a323"
+  },
+  {
+    "name": "auth-check-otp___oz",
+    "path": "/oz/auth/check-otp",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/check-otp.vue",
+    "chunkName": "pages/auth/check-otp",
+    "_name": "_d85b1ce8"
+  },
+  {
+    "name": "auth-forgot-password___oz",
+    "path": "/oz/auth/forgot-password",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/forgot-password.vue",
+    "chunkName": "pages/auth/forgot-password",
+    "_name": "_5e2134ab"
+  },
+  {
+    "name": "auth-login___oz",
+    "path": "/oz/auth/login",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_347dd98f"
+  },
+  {
+    "name": "auth-otp___oz",
+    "path": "/oz/auth/otp",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/otp.vue",
+    "chunkName": "pages/auth/otp",
+    "_name": "_1ac193d1"
+  },
+  {
+    "name": "auth-register___oz",
+    "path": "/oz/auth/register",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_3f99a0ed"
+  },
+  {
+    "name": "auth-reset-password___oz",
+    "path": "/oz/auth/reset-password",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/reset-password.vue",
+    "chunkName": "pages/auth/reset-password",
+    "_name": "_6347a323"
+  },
+  {
+    "name": "auth-check-otp___uz",
+    "path": "/uz/auth/check-otp",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/check-otp.vue",
+    "chunkName": "pages/auth/check-otp",
+    "_name": "_d85b1ce8"
+  },
+  {
+    "name": "auth-forgot-password___uz",
+    "path": "/uz/auth/forgot-password",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/forgot-password.vue",
+    "chunkName": "pages/auth/forgot-password",
+    "_name": "_5e2134ab"
+  },
+  {
+    "name": "auth-login___uz",
+    "path": "/uz/auth/login",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_347dd98f"
+  },
+  {
+    "name": "auth-otp___uz",
+    "path": "/uz/auth/otp",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/otp.vue",
+    "chunkName": "pages/auth/otp",
+    "_name": "_1ac193d1"
+  },
+  {
+    "name": "auth-register___uz",
+    "path": "/uz/auth/register",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/register.vue",
+    "chunkName": "pages/auth/register",
+    "_name": "_3f99a0ed"
+  },
+  {
+    "name": "auth-reset-password___uz",
+    "path": "/uz/auth/reset-password",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/auth/reset-password.vue",
+    "chunkName": "pages/auth/reset-password",
+    "_name": "_6347a323"
+  },
+  {
+    "name": "cabinet-admin-notification___en",
+    "path": "/en/cabinet/admin/notification",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/admin/notification.vue",
+    "chunkName": "pages/cabinet/admin/notification",
+    "_name": "_19d0ac0f"
+  },
+  {
+    "name": "cabinet-admin-statistics___en",
+    "path": "/en/cabinet/admin/statistics",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/admin/statistics.vue",
+    "chunkName": "pages/cabinet/admin/statistics",
+    "_name": "_0ca7e972"
+  },
+  {
+    "name": "cabinet-user-display___en",
+    "path": "/en/cabinet/user/display",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/display/index.vue",
+    "chunkName": "pages/cabinet/user/display/index",
+    "_name": "_de56c136"
+  },
+  {
+    "name": "cabinet-user-my-locations___en",
+    "path": "/en/cabinet/user/my-locations",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/my-locations.vue",
+    "chunkName": "pages/cabinet/user/my-locations",
+    "_name": "_68cac18d"
+  },
+  {
+    "name": "cabinet-user-notification___en",
+    "path": "/en/cabinet/user/notification",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/notification.vue",
+    "chunkName": "pages/cabinet/user/notification",
+    "_name": "_09d37a0a"
+  },
+  {
+    "name": "cabinet-user-profile___en",
+    "path": "/en/cabinet/user/profile",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/profile.vue",
+    "chunkName": "pages/cabinet/user/profile",
+    "_name": "_2c258fc9"
+  },
+  {
+    "name": "cabinet-admin-notification___oz",
+    "path": "/oz/cabinet/admin/notification",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/admin/notification.vue",
+    "chunkName": "pages/cabinet/admin/notification",
+    "_name": "_19d0ac0f"
+  },
+  {
+    "name": "cabinet-admin-statistics___oz",
+    "path": "/oz/cabinet/admin/statistics",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/admin/statistics.vue",
+    "chunkName": "pages/cabinet/admin/statistics",
+    "_name": "_0ca7e972"
+  },
+  {
+    "name": "cabinet-user-display___oz",
+    "path": "/oz/cabinet/user/display",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/display/index.vue",
+    "chunkName": "pages/cabinet/user/display/index",
+    "_name": "_de56c136"
+  },
+  {
+    "name": "cabinet-user-my-locations___oz",
+    "path": "/oz/cabinet/user/my-locations",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/my-locations.vue",
+    "chunkName": "pages/cabinet/user/my-locations",
+    "_name": "_68cac18d"
+  },
+  {
+    "name": "cabinet-user-notification___oz",
+    "path": "/oz/cabinet/user/notification",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/notification.vue",
+    "chunkName": "pages/cabinet/user/notification",
+    "_name": "_09d37a0a"
+  },
+  {
+    "name": "cabinet-user-profile___oz",
+    "path": "/oz/cabinet/user/profile",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/profile.vue",
+    "chunkName": "pages/cabinet/user/profile",
+    "_name": "_2c258fc9"
+  },
+  {
+    "name": "cabinet-admin-notification___uz",
+    "path": "/uz/cabinet/admin/notification",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/admin/notification.vue",
+    "chunkName": "pages/cabinet/admin/notification",
+    "_name": "_19d0ac0f"
+  },
+  {
+    "name": "cabinet-admin-statistics___uz",
+    "path": "/uz/cabinet/admin/statistics",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/admin/statistics.vue",
+    "chunkName": "pages/cabinet/admin/statistics",
+    "_name": "_0ca7e972"
+  },
+  {
+    "name": "cabinet-user-display___uz",
+    "path": "/uz/cabinet/user/display",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/display/index.vue",
+    "chunkName": "pages/cabinet/user/display/index",
+    "_name": "_de56c136"
+  },
+  {
+    "name": "cabinet-user-my-locations___uz",
+    "path": "/uz/cabinet/user/my-locations",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/my-locations.vue",
+    "chunkName": "pages/cabinet/user/my-locations",
+    "_name": "_68cac18d"
+  },
+  {
+    "name": "cabinet-user-notification___uz",
+    "path": "/uz/cabinet/user/notification",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/notification.vue",
+    "chunkName": "pages/cabinet/user/notification",
+    "_name": "_09d37a0a"
+  },
+  {
+    "name": "cabinet-user-profile___uz",
+    "path": "/uz/cabinet/user/profile",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/profile.vue",
+    "chunkName": "pages/cabinet/user/profile",
+    "_name": "_2c258fc9"
+  },
+  {
+    "name": "cabinet-user-display-update-slug___en",
+    "path": "/en/cabinet/user/display/update/:slug?",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/display/update/_slug.vue",
+    "chunkName": "pages/cabinet/user/display/update/_slug",
+    "_name": "_28d8da01"
+  },
+  {
+    "name": "cabinet-user-display-update-slug___oz",
+    "path": "/oz/cabinet/user/display/update/:slug?",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/display/update/_slug.vue",
+    "chunkName": "pages/cabinet/user/display/update/_slug",
+    "_name": "_28d8da01"
+  },
+  {
+    "name": "cabinet-user-display-update-slug___uz",
+    "path": "/uz/cabinet/user/display/update/:slug?",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/display/update/_slug.vue",
+    "chunkName": "pages/cabinet/user/display/update/_slug",
+    "_name": "_28d8da01"
+  },
+  {
+    "name": "cabinet-user-display-update-slug___ru",
+    "path": "/cabinet/user/display/update/:slug?",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/cabinet/user/display/update/_slug.vue",
+    "chunkName": "pages/cabinet/user/display/update/_slug",
+    "_name": "_28d8da01"
+  },
+  {
+    "name": "marker-detail-slug___en",
+    "path": "/en/marker-detail/:slug?",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/marker-detail/_slug.vue",
+    "chunkName": "pages/marker-detail/_slug",
+    "_name": "_6ee41202"
+  },
+  {
+    "name": "marker-detail-slug___oz",
+    "path": "/oz/marker-detail/:slug?",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/marker-detail/_slug.vue",
+    "chunkName": "pages/marker-detail/_slug",
+    "_name": "_6ee41202"
+  },
+  {
+    "name": "marker-detail-slug___uz",
+    "path": "/uz/marker-detail/:slug?",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/marker-detail/_slug.vue",
+    "chunkName": "pages/marker-detail/_slug",
+    "_name": "_6ee41202"
+  },
+  {
+    "name": "marker-detail-slug___ru",
+    "path": "/marker-detail/:slug?",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/marker-detail/_slug.vue",
+    "chunkName": "pages/marker-detail/_slug",
+    "_name": "_6ee41202"
+  },
+  {
+    "name": "index___ru",
+    "path": "/",
+    "component": "/Users/Bekzod/Development/front-apps/reklaama/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_75f68195"
+  }
+]

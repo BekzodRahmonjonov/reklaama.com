@@ -1,0 +1,58 @@
+.pagination ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 0;
+  }
+  .pagination li, .pagination button {
+    width: 48px;
+    height: 48px;
+    background: $white;
+    margin: 0 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+    filter: drop-shadow(0 0 1px $primary-color);
+    border-radius: 50%;
+    border: none;
+  }
+  .pagination li.active {
+    background: $primary-color;
+    color: $white;
+  }
+  .pagination button{
+    background: $primary-color;
+  
+  }
+  .pagination button svg path{
+    stroke: $white;
+  }
+  
+  .pagination button[disabled]{
+    background: $white;
+    cursor: not-allowed;
+  }
+  .pagination button[disabled] svg path{
+    stroke: $primary-color;  
+  }
+  
+  button.left{
+    transform: rotate(180deg);
+  }
+
+
+  @include devices(xs){
+    .pagination li, .pagination button {
+      width: 30px;
+      height: 30px;
+    }
+    .pagination button{
+      max-width: 30px !important;
+    }
+  }

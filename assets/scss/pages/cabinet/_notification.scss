@@ -1,0 +1,193 @@
+.notification {
+  &-item {
+    max-width: 800px;
+    border: 3px solid $background-secondary2-color;
+    border-radius: 8px;
+    padding: 24px 36px;
+    margin-bottom: 12px;
+    @include d-flex(space-between);
+
+    .svg {
+      margin-right: 0 !important;
+    }
+    small {
+      display: block;
+      @include text(500, 12px, 14px, $text-secondary-color);
+      margin-bottom: 2px;
+      &.mt-12 {
+        margin-top: 12px;
+      }
+    }
+    strong {
+      @include text(500, 14px, 17px, $text-primary-color);
+    }
+    button.icon {
+      width: 46px;
+      height: 46px;
+      max-height: 46px;
+      border-radius: 50%;
+      &.fill {
+        .svg svg path {
+          fill: #fff;
+        }
+      }
+      &.stroke {
+        .svg svg path {
+          stroke: #fff;
+        }
+      }
+    }
+    &-date {
+      flex: 1;
+      a {
+        @include text(500, 14px, 17px, #5594f3);
+        text-decoration-line: underline;
+      }
+    }
+    &-status {
+      @include d-flex(center);
+      .svg {
+        width: 20px;
+        height: 20px;
+      }
+      button,
+      button:hover {
+        width: 46px;
+        height: 46px !important;
+        border-radius: 8px;
+        &:first-child {
+          margin-right: 12px;
+          .svg {
+            width: 24px;
+            height: 24px;
+            svg path {
+              fill: $white !important;
+            }
+          }
+        }
+      }
+    }
+    &-expire {
+      @include d-flex(flex-start);
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: auto;
+    }
+    &-title {
+      flex: 1;
+      margin-bottom: auto;
+      a {
+        display: block;
+      }
+    }
+    &-description {
+      flex: 2;
+    }
+    .content {
+      flex: 1;
+      margin-left: 24px;
+      @include d-flex(space-between);
+      align-items: flex-start;
+    }
+  }
+  &-list {
+    li {
+      @include d-flex(flex-start);
+      @include text(500, 16px, 19px, $text-muted-color);
+      padding: 12px;
+      cursor: pointer;
+      span {
+        margin: 0 8px;
+      }
+      .svg svg {
+        width: 24px;
+        height: 24px;
+        path {
+          // fill: $text-muted-color;
+          stroke: $text-muted-color;
+        }
+      }
+      .svg.filter svg path {
+        fill: $text-muted-color !important;
+        stroke: none;
+      }
+      small {
+        background-color: $text-muted-color;
+        color: $white;
+        padding: 2px 4px;
+        border-radius: 16px;
+        min-width: 22px;
+        text-align: center;
+      }
+    }
+  }
+  .empty {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    transform: scale(5);
+  }
+  @include devices(md) {
+    margin-left: 60px;
+    &-item {
+      padding: 12px 16px;
+    }
+  }
+  @include devices(sm) {
+    margin-left: 0;
+  }
+  @include devices(xs) {
+    &-item {
+      align-items: flex-start;
+      .content {
+        margin-left: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
+body.dark {
+  .notification {
+    button.icon {
+      &.fill {
+        .svg svg path,
+        g rect {
+          fill: #242424;
+        }
+      }
+      &.stroke {
+        .svg svg path {
+          stroke: #242424;
+        }
+      }
+    }
+  }
+}
+
+.user-notification {
+  .notification {
+    &-item {
+      button.icon {
+        width: 46px;
+        height: 46px;
+        max-height: 46px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.admin-notification {
+  .notification-item {
+    button.icon {
+      .svg svg {
+        margin-left: 3px;        
+        path{
+          stroke: $white;
+        }
+      }
+    }
+  }
+}
